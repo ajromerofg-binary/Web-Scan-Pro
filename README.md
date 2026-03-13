@@ -74,13 +74,13 @@ Caracteristicas principales:
   2. REQUISITOS DEL SISTEMA
  
   Obligatorios:
-  +------------------+---------------------------+------------------------------+
-  | Componente       | Version minima            | Verificacion                 |
-  +------------------+---------------------------+------------------------------+
-  | Bash             | 4.0 o superior            | bash --version               |
-  | Python           | 3.6 o superior            | python3 --version            |
-  | curl             | Cualquier version moderna | curl --version               |
-  +------------------+---------------------------+------------------------------+
+  
+   Componente:        Version mínima:            Verificación:                
+  
+   Bash              4.0 o superior              bash --version               
+   Python            3.6 o superior              python3 --version            
+   curl              Cualquier version moderna   curl --version               
+
  
   Sistemas operativos compatibles:
     - GNU/Linux (Debian, Ubuntu, Kali, Parrot, Arch, CentOS, Fedora...)
@@ -132,23 +132,23 @@ Caracteristicas principales:
     ./webscan.sh -u <URL> [opciones]
  
   Opciones disponibles:
-  +---------------+------------------------------------------------------------+
-  | Opcion        | Descripcion                                                |
-  +---------------+------------------------------------------------------------+
-  | -u, --url     | URL objetivo (OBLIGATORIO). Incluye http:// o https://     |
-  |               | Si se omite el protocolo, se asume http://                 |
-  +---------------+------------------------------------------------------------+
-  | -o, --output  | Directorio de salida para los informes                     |
-  |               | Por defecto: ~/Desktop/WebScan_<timestamp>                 |
-  +---------------+------------------------------------------------------------+
-  | -t, --timeout | Segundos de espera maxima por peticion HTTP                |
-  |               | Por defecto: 12 segundos. Aumentar en redes lentas.        |
-  +---------------+------------------------------------------------------------+
-  | --only <mod>  | Ejecutar un unico modulo. Ver lista de modulos abajo.      |
-  |               | Util para escaneos rapidos o dirigidos.                    |
-  +---------------+------------------------------------------------------------+
-  | -h, --help    | Mostrar ayuda rapida en pantalla.                          |
-  +---------------+------------------------------------------------------------+
+  
+   Opcion         Descripcion                                               
+ 
+   -u, --url      URL objetivo (OBLIGATORIO). Incluye http:// o https://     
+                   Si se omite el protocolo, se asume http://                 
+
+   -o, --output   Directorio de salida para los informes                     
+                  Por defecto: ~/Desktop/WebScan_<timestamp>                 
+
+   -t, --timeout  Segundos de espera maxima por peticion HTTP                
+                  Por defecto: 12 segundos. Aumentar en redes lentas.        
+
+   --only <mod>   Ejecutar un unico modulo. Ver lista de modulos abajo.      
+                  Util para escaneos rapidos o dirigidos.                    
+  
+   -h, --help     Mostrar ayuda rapida en pantalla.                          
+  
  
   Valores validos para --only:
     headers   Cabeceras de seguridad HTTP
@@ -170,9 +170,9 @@ Caracteristicas principales:
     ./webscan.sh -u http://192.168.1.50:8080 --only sqli
  
  
-================================================================================
+
   5. MODULOS DE DETECCION
-================================================================================
+
  
   La herramienta ejecuta 12 modulos de forma secuencial. Cada modulo es
   independiente y puede lanzarse de forma aislada con --only.
@@ -180,9 +180,9 @@ Caracteristicas principales:
   A continuacion se describe en detalle que comprueba cada modulo, como lo
   hace y que tipo de hallazgos puede generar.
  
-  ____________________________________________________________________________
+
   5.01  SECURITY HEADERS (cabeceras de seguridad HTTP)
-  ____________________________________________________________________________
+  
  
   Que comprueba:
     Analiza las cabeceras de respuesta HTTP del servidor para detectar la
@@ -193,19 +193,19 @@ Caracteristicas principales:
     Realiza una peticion HEAD al objetivo y examina las cabeceras recibidas.
  
   Hallazgos posibles:
-  +--------+----------------------------------------------------+-------------+
-  | ID     | Descripcion                                        | Severidad   |
-  +--------+----------------------------------------------------+-------------+
-  | SH01   | Falta Strict-Transport-Security (HSTS)             | ALTO        |
-  | SH02   | Falta proteccion anti-Clickjacking                 | MEDIO       |
-  |        | (X-Frame-Options o CSP frame-ancestors)            |             |
-  | SH03   | Falta X-Content-Type-Options                       | BAJO        |
-  | SH04   | Falta Content-Security-Policy (CSP)                | MEDIO       |
-  | SH05   | Falta Referrer-Policy                              | BAJO        |
-  | SH06   | Falta Permissions-Policy                           | BAJO        |
-  | SH07   | Cabecera Server revela version del servidor        | BAJO        |
-  | SH08   | Cabecera X-Powered-By revela tecnologia            | BAJO        |
-  +--------+----------------------------------------------------+-------------+
+
+   ID      Descripcion                                         Severidad   
+ 
+   SH01    Falta Strict-Transport-Security (HSTS)               ALTO        
+   SH02    Falta proteccion anti-Clickjacking                   MEDIO
+            (X-Frame-Options o CSP frame-ancestors)                         
+   SH03    Falta X-Content-Type-Options                         BAJO        
+   SH04    Falta Content-Security-Policy (CSP)                  MEDIO       
+   SH05    Falta Referrer-Policy                                BAJO        
+   SH06    Falta Permissions-Policy                             BAJO        
+   SH07    Cabecera Server revela version del servidor          BAJO        
+   SH08    Cabecera X-Powered-By revela tecnologia              BAJO        
+
  
   ____________________________________________________________________________
   5.02  SQL INJECTION (SQLi)
