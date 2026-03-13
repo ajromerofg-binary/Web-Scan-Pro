@@ -14,9 +14,9 @@
   Fecha manual  : Marzo 2026
   Dependencias  : Bash 4+  |  Python 3.6+  |  curl
  
-================================================================================
+
   INDICE
-================================================================================
+
  
   1.  Descripcion general
   2.  Requisitos del sistema
