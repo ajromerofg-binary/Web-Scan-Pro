@@ -264,16 +264,16 @@ Caracteristicas principales:
     "onmouseover="alert(1)
  
   Hallazgos posibles:
-  +--------+----------------------------------------------------+-------------+
-  | ID     | Descripcion                                        | Severidad   |
-  +--------+----------------------------------------------------+-------------+
-  | XSS01  | XSS Reflejado en parametro GET                     | ALTO        |
-  | XSS02  | XSS en formulario POST                             | ALTO        |
-  +--------+----------------------------------------------------+-------------+
  
-  ____________________________________________________________________________
+   ID      Descripcion                                         Severidad   
+ 
+   XSS01   XSS Reflejado en parametro GET                      ALTO        
+   XSS02   XSS en formulario POST                              ALTO        
+
+ 
+  
   5.04  XML EXTERNAL ENTITY (XXE)
-  ____________________________________________________________________________
+
  
   Que comprueba:
     Detecta si el servidor procesa entidades XML externas, lo que permite
@@ -292,17 +292,16 @@ Caracteristicas principales:
     DTD con entidad parametro para XXE out-of-band
  
   Hallazgos posibles:
-  +--------+----------------------------------------------------+-------------+
-  | ID     | Descripcion                                        | Severidad   |
-  +--------+----------------------------------------------------+-------------+
-  | XXE01  | XXE confirmado — lectura de /etc/passwd            | CRITICO     |
-  | XXE02  | Parser XML expuesto con errores visibles           | ALTO        |
-  | XXE03  | Endpoint devuelve XML — revisar manualmente        | MEDIO       |
-  +--------+----------------------------------------------------+-------------+
  
-  ____________________________________________________________________________
+   ID      Descripcion                                        Severidad   
+  
+   XXE01   XXE confirmado — lectura de /etc/passwd             CRITICO     
+   XXE02   Parser XML expuesto con errores visibles            ALTO        
+   XXE03   Endpoint devuelve XML — revisar manualmente         MEDIO       
+ 
+ 
+
   5.05  LOCAL FILE INCLUSION (LFI)
-  ____________________________________________________________________________
  
   Que comprueba:
     Verifica si parametros que reciben nombres de fichero o rutas pueden
@@ -327,16 +326,15 @@ Caracteristicas principales:
     /etc/passwd (ruta absoluta)
  
   Hallazgos posibles:
-  +--------+----------------------------------------------------+-------------+
-  | ID     | Descripcion                                        | Severidad   |
-  +--------+----------------------------------------------------+-------------+
-  | LFI01  | LFI confirmado — fichero del sistema leido         | CRITICO     |
-  | LFI02  | LFI con PHP Wrapper base64 confirmado              | CRITICO     |
-  +--------+----------------------------------------------------+-------------+
- 
-  ____________________________________________________________________________
+
+   ID      Descripcion                                         Severidad   
+  
+   LFI01   LFI confirmado — fichero del sistema leido          CRITICO     
+   LFI02   LFI con PHP Wrapper base64 confirmado               CRITICO     
+  
+
   5.06  REMOTE FILE INCLUSION (RFI)
-  ____________________________________________________________________________
+ 
  
   Que comprueba:
     Detecta si los parametros de la aplicacion pueden cargarse URLs
