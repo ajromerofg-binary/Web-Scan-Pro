@@ -198,7 +198,7 @@ Caracteristicas principales:
  
    SH01    Falta Strict-Transport-Security (HSTS)               ALTO        
    SH02    Falta proteccion anti-Clickjacking                   MEDIO
-            (X-Frame-Options o CSP frame-ancestors)                         
+          (X-Frame-Options o CSP frame-ancestors)                         
    SH03    Falta X-Content-Type-Options                         BAJO        
    SH04    Falta Content-Security-Policy (CSP)                  MEDIO       
    SH05    Falta Referrer-Policy                                BAJO        
@@ -207,9 +207,9 @@ Caracteristicas principales:
    SH08    Cabecera X-Powered-By revela tecnologia              BAJO        
 
  
-  ____________________________________________________________________________
+ 
   5.02  SQL INJECTION (SQLi)
-  ____________________________________________________________________________
+
  
   Que comprueba:
     Intenta provocar errores SQL o retrasos de tiempo para detectar si los
@@ -231,16 +231,16 @@ Caracteristicas principales:
     Warning mysql_, sqlite3.OperationalError, PG::SyntaxError, entre otros.
  
   Hallazgos posibles:
-  +--------+----------------------------------------------------+-------------+
-  | ID     | Descripcion                                        | Severidad   |
-  +--------+----------------------------------------------------+-------------+
-  | SQLI01 | SQL Injection Error-Based confirmado               | CRITICO     |
-  | SQLI02 | SQL Injection Blind Time-Based sospechoso          | ALTO        |
-  +--------+----------------------------------------------------+-------------+
+  
+   ID      Descripcion                                         Severidad   
+
+   SQLI01  SQL Injection Error-Based confirmado                CRITICO     
+   SQLI02  SQL Injection Blind Time-Based sospechoso           ALTO        
  
-  ____________________________________________________________________________
+ 
+
   5.03  CROSS-SITE SCRIPTING (XSS)
-  ____________________________________________________________________________
+
  
   Que comprueba:
     Verifica si la aplicacion refleja el input del usuario sin codificar,
