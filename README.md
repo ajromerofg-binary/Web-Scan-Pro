@@ -47,9 +47,8 @@
   12. Aviso legal
  
  
-================================================================================
+
   1. DESCRIPCION GENERAL
-================================================================================
  
 WebScan Pro es una herramienta de analisis de seguridad web implementada como un
 unico script Bash autonomo. Combina logica de deteccion propia en Bash con un
@@ -72,9 +71,7 @@ Caracteristicas principales:
   - Timeout configurable para adaptarse a redes lentas.
  
  
-================================================================================
   2. REQUISITOS DEL SISTEMA
-================================================================================
  
   Obligatorios:
   +------------------+---------------------------+------------------------------+
@@ -98,9 +95,8 @@ Caracteristicas principales:
   Ejemplo: ./webscan.sh -u https://objetivo.com -o /mnt/c/Users/TuUsuario/Desktop
  
  
-================================================================================
+
   3. INSTALACION Y PRIMEROS PASOS
-================================================================================
  
   Paso 1: Descargar o copiar el fichero webscan.sh en tu sistema.
  
@@ -129,9 +125,8 @@ Caracteristicas principales:
     ./webscan.sh -u https://objetivo.com -o ~/informes/escaneo1
  
  
-================================================================================
+
   4. SINTAXIS Y OPCIONES DE USO
-================================================================================
  
   Uso basico:
     ./webscan.sh -u <URL> [opciones]
