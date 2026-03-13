@@ -1,13 +1,13 @@
-================================================================================
-||                                                                            ||
-||              W E B S C A N   P R O   v 2 . 0                             ||
-||           Manual de Usuario y Referencia Tecnica                          ||
-||                                                                            ||
-||   Escaner de Vulnerabilidades Web — Script Bash autonomo                  ||
-||   Cubre: SQLi · XSS · XXE · LFI · RFI · Path Traversal                   ||
-||          SSRF · SSTI · CMS Detection · Security Headers                   ||
-||                                                                            ||
-================================================================================
+
+                                                                          
+              W E B S C A N   P R O   v 2 . 0                             
+          Manual de Usuario y Referencia Tecnica                          
+                                                                          
+   Escaner de Vulnerabilidades Web — Script Bash autonomo                  
+   Cubre: SQLi · XSS · XXE · LFI · RFI · Path Traversal                  
+          SSRF · SSTI · CMS Detection · Security Headers                  
+                                                                        
+
  
   Clasificacion : USO INTERNO / CONFIDENCIAL
   Version       : 2.0
